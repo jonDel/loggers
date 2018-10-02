@@ -2,6 +2,7 @@ language: python
 
 python:
   - "2.7"
+  - "3.6"
 install:
   - pip install -e .
   - pip install coveralls # For coveralls.io specifically

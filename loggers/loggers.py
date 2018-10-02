@@ -18,7 +18,7 @@ class Loggers(object):
 
     '''
     def __init__(self, log_name, **kwargs):
-        default_args = {'log_folder_path':None, 'log_file':None, 'logger':None}
+        default_args = {'log_folder_path': None, 'log_file': None, 'logger': None}
         default_args.update(kwargs)
         self.log = default_args['logger'] if default_args['logger'] else logging.getLogger(log_name)
         self.default_formatter = logging.Formatter('Log: %(message)s | Log level:%(levelname)s |\

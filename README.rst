@@ -13,9 +13,6 @@
    :target: https://landscape.io/github/jonDel/loggers/master
    :alt: Code Health
 
-.. image:: https://www.versioneye.com/user/projects/58233ff57a7295003aab5425/badge.svg?style=flat
-   :target: https://www.versioneye.com/user/projects/58233ff57a7295003aab5425
-
 .. image:: https://img.shields.io/pypi/v/loggers.svg
    :target: https://pypi.python.org/pypi/loggers/
    :alt: Latest PyPI version
@@ -34,8 +31,8 @@ Example
   >>> from loggers import Loggers
   >>>
   >>> class spamClass(Loggers):
-  ...   def __init__(self, logFolder=None):
-  ...       super(spamClass, self).__init__('spamClass', logFolderPath=logFolder)
+  ...   def __init__(self, log_folder=None):
+  ...       super(spamClass, self).__init__('spamClass', log_folder_path=log_folder)
   ...   def do_stuff(self, arg):
   ...       if not type(arg) == str:
   ...         self.log.error("I was expecting a string. :( ")
@@ -63,7 +60,7 @@ To install loggers, simply run:
 
   $ pip install loggers
 
-loggers is compatible with Python 2.6+
+loggers is compatible with Python 2.6+ and Python 3
 
 Documentation
 -------------
